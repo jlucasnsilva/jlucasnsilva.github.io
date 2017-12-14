@@ -20,11 +20,11 @@ Dentre os grandes nomes da computação, **Douglas Crockford**, **Mike Acton**, 
 
 - Douglas Crockford: [JavaScript: The Good Parts](https://www.youtube.com/watch?v=hQVTIJBZook);
 
-- Mike Acton: ["Public Static Void"](https://www.youtube.com/watch?v=5kj5ApnhPAE), [Concurrency Is Not Parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso) e (Simplicity is Complicated)[https://www.youtube.com/watch?v=rFejpH_tAHM];
+- Rob Pike: ["Public Static Void"](https://www.youtube.com/watch?v=5kj5ApnhPAE), [Concurrency Is Not Parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso) e [Simplicity is Complicated](https://www.youtube.com/watch?v=rFejpH_tAHM);
 
 - Rich Hickey: [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc), [The Value of Values](https://www.youtube.com/watch?v=-6BsiVyC1kM), [Deconstructing the Database](https://www.youtube.com/watch?v=Cym4TZwTCNU), [Simplicity Matters](https://www.youtube.com/watch?v=rI8tNMsozo0), [Database as a Value](https://www.youtube.com/watch?v=EKdV1IgAaFc)
 
-- Rob Pike: a brutal palestra [Data-Oriented Design and C++](https://www.youtube.com/watch?v=rX0ItVEVjHc).
+- Mike Acton: a brutal palestra [Data-Oriented Design and C++](https://www.youtube.com/watch?v=rX0ItVEVjHc).
 
 ### About me
 
@@ -42,8 +42,8 @@ Among the great people in computer science, **Douglas Crockford**, **Mike Acton*
 
 - Douglas Crockford: [JavaScript: The Good Parts](https://www.youtube.com/watch?v=hQVTIJBZook);
 
-- Mike Acton: ["Public Static Void"](https://www.youtube.com/watch?v=5kj5ApnhPAE), [Concurrency Is Not Parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso) e (Simplicity is Complicated)[https://www.youtube.com/watch?v=rFejpH_tAHM];
+- Rob Pike: ["Public Static Void"](https://www.youtube.com/watch?v=5kj5ApnhPAE), [Concurrency Is Not Parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso) e [Simplicity is Complicated](https://www.youtube.com/watch?v=rFejpH_tAHM);
 
-- Rich Hickey: [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc), (The Value of Values)[https://www.youtube.com/watch?v=-6BsiVyC1kM], [Deconstructing the Database](https://www.youtube.com/watch?v=Cym4TZwTCNU), [Simplicity Matters](https://www.youtube.com/watch?v=rI8tNMsozo0), (Database as a Value)[https://www.youtube.com/watch?v=EKdV1IgAaFc]
+- Rich Hickey: [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc), [The Value of Values](https://www.youtube.com/watch?v=-6BsiVyC1kM), [Deconstructing the Database](https://www.youtube.com/watch?v=Cym4TZwTCNU), [Simplicity Matters](https://www.youtube.com/watch?v=rI8tNMsozo0), [Database as a Value](https://www.youtube.com/watch?v=EKdV1IgAaFc];
 
-- Rob Pike: the brutal [Data-Oriented Design and C++](https://www.youtube.com/watch?v=rX0ItVEVjHc).
+- Mike Acton: the brutal [Data-Oriented Design and C++](https://www.youtube.com/watch?v=rX0ItVEVjHc).
