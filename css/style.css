@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(250, 250, 250);
+    color: rgb(50, 50, 50);
+    word-wrap: break-word;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+
+h1 { font-size: 4em; }
+
+h2 { font-size: 3em; }
+
+h3 { font-size: 2.5em; }
+
+h4 { font-size: 2em; }
+
+hr {
+    border-width: 2px;
+    display: block;
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+
+footer {
+    color: rgb(250, 250, 250);
+    background-color: rgb(40, 40, 40);
+}
+
+article {
+    background-color: rgb(240, 240, 240);
+}
+
+nav {
+    font-size: 1.4em;
+}
+
+nav > a {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    color: rgb(40, 40, 40);
+}
+
+nav > a:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+nav ul { list-style: none; }
+
+nav ul li > a:hover {
+    background-color: rgb(29, 129, 187);
+    color: rgb(250, 250, 250);
+}
+
+nav.navbar {
+    background-color: rgb(250, 250, 250);
+}

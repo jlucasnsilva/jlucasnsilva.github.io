@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head lang="pt-br">
+    <title>jlucasnsilva</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página pessoal">
+    <meta name="keywords" content="Portifólio">
+    <meta name="author" content="João Lucas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a id="langSwitch" href="#">english »</a></li>
+                <li><a id="aboutLink" href="#sobre">sobre</a></li>
+                <li><a id="projectsLink" href="#projetos">projetos</a></li>
+                <li><a id="moreLink" href="#mais">mais</a></li>
+            </ul>
+        </nav>
+        <div class="cover">
+            <img src="img/logo.png" alt="Logo" />
+            <nav>
+                <a target="_blank" href="https://www.github.com/jlucasnsilva">@github</a>
+                <a target="_blank" href="https://www.bitbucket.com/jlucasnsilva">@bitbucket</a>
+                <a target="_blank" href="https://www.linkedin.com/in/jlucasnsilva">@linkedin</a>
+            </nav>
+        </div>
+    </header>
+
+    <hr />
+
+    <main>
+        <div id="pt">
+            <article id="sobre">
+                <h1>Sobre</h1>
+                <p>
+                    Graduado em Ciência da Computação, toco contrabaixo e gostode
+                    ler livros de diversas áreas.
+                </p>
+                <p>Em computação tenho interesse em:</p>
+                <ul>
+                    <li>
+                        linguagens de programação e nas perspectivas que elas trazem
+                        ao desenvolvimento de software: já experimentei C, C++, Clojure,
+                        Golang, Haskell, Java, JavaScript, Lua, Pascal, Python e Ruby;
+                        dentre elas, C, Clojure e Golang persistem comigo;
+                    </li>
+                    <li>
+                        problemas que façam meu cérebro girar: sistemas distribuídos,
+                        escalabilidade, sistemas com restrições (memória, processamento
+                        ou troca de mensagens);
+                    </li>
+                    <li>
+                        modelos e implementação sistemas gerenciadores de banco de
+                        dados/armazenamento: Datomic, CockroachDB e Dynamo estão entre os
+                        modelos que chamam mais a minha atenção, de fato, Dynamo: Amazon’s
+                        Highly Available Key-value Store é um dos meus artigos prediletos e
+                        estou desenvolvendo (de maneira exploratória) o bytekeg, que é
+                        baseado no bitcask, porém tem o conceito de persistência do Datomic.
+                    </li>
+                </ul>
+            </article>
+            <hr />
+            <article id="projetos">
+                <h1>Projetos</h1>
+            </article>
+            <hr />
+            <article id="mais">
+                <h1>Mais</h1>
+                <p>
+                    Dentre os grandes nomes da computação, Douglas Crockford, Mike Acton, Rich
+                    Hickey e Rob Pike são os que mais influenciaram meu modo de pensar [em
+                    desenvolvimento de software]. As palestras deles que considero a mais
+                    importantes:
+                </p>
+                <ul>
+                    <li>
+                        Douglas Crockford: JavaScript: The Good Parts;
+                    </li>
+                    <li>
+                        Rob Pike: “Public Static Void”, Concurrency Is Not Parallelism e Simplicity
+                        is Complicated;
+                    </li>
+                    <li>
+                        Rich Hickey: Hammock Driven Development, The Value of Values, Deconstructing
+                        the Database, Simplicity Matters, Database as a Value;
+                    </li>
+                    <li>
+                        Mike Acton: a brutal palestra Data-Oriented Design and C++.
+                    </li>
+                </ul>
+            </article>
+        </div>
+
+        <div id="en">
+            <article id="about">
+                <h1>About</h1>
+                <p>
+                    BSc in Computer Science, who plays the bass guitar and likes reading
+                    book of several areas
+                </p>
+                <p>My interests in computer science are:</p>
+                <ul>
+                    <li>
+                        programming languages and how the influence the software development
+                        mindset: I’ve played with C, C++, Clojure, Golang, Haskell, Java,
+                        JavaScript, Lua, Pascal, Python and Ruby; among these, C, Clojure and
+                        Golang stuck with me;
+                    </li>
+                    <li>
+                        problems that make my brain spin: distributed systems, scalability,
+                        systems with constraints (memory, processing or messaging);
+                    </li>
+                    <li>
+                        database/storage management systems models and implentation: Datomic,
+                        CockroachDB and Dynamo are amongst the models draw most of my attention,
+                        in fact, Dynamo: Amazon’s Highly Available Key-value Store is one of my
+                        favorite papers and I’m currently working on my bytekeg, which is based
+                        on bitcask, but it has the Datomic’s concept of persistence.
+                    </li>
+                </ul>
+            </article>
+            <article id="projects">
+                <h1>Projects</h1>
+            </article>
+            <article id="more">
+                <h1>More</h1>
+                <p>
+                    Among the great people in computer science, Douglas Crockford, Mike Acton,
+                    Rich Hickey and Rob Pike are the ones who had most influence in the way I
+                    think [about software development]. Their talks I consider the most important
+                    are:
+                </p>
+                <ul>
+                    <li>
+                        Douglas Crockford: JavaScript: The Good Parts;
+                    </li>
+                    <li>
+                        Rob Pike: “Public Static Void”, Concurrency Is Not Parallelism e Simplicity
+                        is Complicated;
+                    </li>
+                    <li>
+                        Rich Hickey: Hammock Driven Development, The Value of Values, Deconstructing
+                        the Database, Simplicity Matters, Database as a Value;
+                    </li>
+                    <li>
+                        Mike Acton: the brutal Data-Oriented Design and C++
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <hr />
+
+    <footer>
+        2018, jlucasnsilva
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/layout.js"></script>
+</body>
