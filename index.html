@@ -7,154 +7,165 @@
     <meta name="author" content="João Lucas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-light">
     <header>
-        <nav class="navbar">
+        <nav>
             <ul>
                 <li><a id="langSwitch" href="#">english »</a></li>
                 <li><a id="aboutLink" href="#sobre">sobre</a></li>
                 <li><a id="projectsLink" href="#projetos">projetos</a></li>
-                <li><a id="moreLink" href="#mais">mais</a></li>
+                <li><a id="talksLink" href="#palestras">palestras</a></li>
             </ul>
         </nav>
-        <div class="cover">
+        <div id="cover" class="cover">
             <img src="img/logo.png" alt="Logo" />
-            <nav>
-                <a target="_blank" href="https://www.github.com/jlucasnsilva">@github</a>
-                <a target="_blank" href="https://www.bitbucket.com/jlucasnsilva">@bitbucket</a>
-                <a target="_blank" href="https://www.linkedin.com/in/jlucasnsilva">@linkedin</a>
-            </nav>
+            <div id="outerLinks" class="btn-group">
+                <a class="btn" target="_blank" href="https://www.github.com/jlucasnsilva">@github</a>
+                <a class="btn" target="_blank" href="https://www.bitbucket.com/jlucasnsilva">@bitbucket</a>
+                <a class="btn" target="_blank" href="https://www.linkedin.com/in/jlucasnsilva">@linkedin</a>
+            </div>
         </div>
     </header>
 
     <hr />
 
     <main>
-        <div id="pt">
+        <div id="pt" class="block">
             <article id="sobre">
                 <h1>Sobre</h1>
                 <p>
-                    Graduado em Ciência da Computação, toco contrabaixo e gostode
-                    ler livros de diversas áreas.
+                    Graduado em Ciência da Computação pela Universidade
+                    Federal de Alagoas. Além de baixista tenho interesse em (no campo da computação):
                 </p>
-                <p>Em computação tenho interesse em:</p>
                 <ul>
                     <li>
-                        linguagens de programação e nas perspectivas que elas trazem
-                        ao desenvolvimento de software: já experimentei C, C++, Clojure,
-                        Golang, Haskell, Java, JavaScript, Lua, Pascal, Python e Ruby;
-                        dentre elas, C, Clojure e Golang persistem comigo;
+                        linguagens de programação: já investi quantidades diferentes de tempoe em
+                        C, C++, Clojure, Golang, Haskell, Java, JavaScript, Lua, Pascal, Python e Ruby.
+                        Dentre elas, <b>C</b>, <b>Clojure</b>, <b>Golang</b> e <b>Java</b> as que mais
+                        me sinto confortável;
                     </li>
                     <li>
-                        problemas que façam meu cérebro girar: sistemas distribuídos,
-                        escalabilidade, sistemas com restrições (memória, processamento
+                        problemas que façam meu cérebro girar: <b>sistemas distribuídos</b>,
+                        <b>escalabilidade</b>, <b>sistemas com restrições</b> (memória, processamento
                         ou troca de mensagens);
                     </li>
-                    <li>
-                        modelos e implementação sistemas gerenciadores de banco de
-                        dados/armazenamento: Datomic, CockroachDB e Dynamo estão entre os
-                        modelos que chamam mais a minha atenção, de fato, Dynamo: Amazon’s
-                        Highly Available Key-value Store é um dos meus artigos prediletos e
-                        estou desenvolvendo (de maneira exploratória) o bytekeg, que é
-                        baseado no bitcask, porém tem o conceito de persistência do Datomic.
-                    </li>
                 </ul>
             </article>
-            <hr />
             <article id="projetos">
                 <h1>Projetos</h1>
+                <table>
+                    <tr>
+                        <th><a href="https://github.com/jlucasnsilva/jlucasnsilva.github.io" target="_blank">this page</a></th>
+                        <th>HTML5, CSS, JavaScript, jQuery</th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://github.com/jlucasnsilva/makesql" target="_blank">makesql</a></th>
+                        <th>Golang</th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://github.com/jlucasnsilva/nolib" target="_blank">nolib</a></th>
+                        <th>C</th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://github.com/jlucasnsilva/bytekeg" target="_blank">bytekeg</a></th>
+                        <th>Golang</th>
+                    </tr>
+                </table>
             </article>
-            <hr />
-            <article id="mais">
-                <h1>Mais</h1>
-                <p>
-                    Dentre os grandes nomes da computação, Douglas Crockford, Mike Acton, Rich
-                    Hickey e Rob Pike são os que mais influenciaram meu modo de pensar [em
-                    desenvolvimento de software]. As palestras deles que considero a mais
-                    importantes:
-                </p>
-                <ul>
-                    <li>
-                        Douglas Crockford: JavaScript: The Good Parts;
-                    </li>
-                    <li>
-                        Rob Pike: “Public Static Void”, Concurrency Is Not Parallelism e Simplicity
-                        is Complicated;
-                    </li>
-                    <li>
-                        Rich Hickey: Hammock Driven Development, The Value of Values, Deconstructing
-                        the Database, Simplicity Matters, Database as a Value;
-                    </li>
-                    <li>
-                        Mike Acton: a brutal palestra Data-Oriented Design and C++.
-                    </li>
-                </ul>
+            <article id="palestras">
+                <h1>Palestras</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Evento</th>
+                            <th>Lugar</th>
+                            <th>Título</th>
+                            <th>Slides</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>2017</th>
+                            <th>Python Day</th>
+                            <th>Maceió, AL</th>
+                            <th>Golang para programadores Python</th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
         </div>
 
-        <div id="en">
+        <div id="en" class="block hidden">
             <article id="about">
                 <h1>About</h1>
                 <p>
-                    BSc in Computer Science, who plays the bass guitar and likes reading
-                    book of several areas
+                    Bsc in Computer Science from the Universidade
+                    Federal de Alagoas. In addition to bassist I am interested in (the field of computer science):
                 </p>
-                <p>My interests in computer science are:</p>
                 <ul>
                     <li>
-                        programming languages and how the influence the software development
-                        mindset: I’ve played with C, C++, Clojure, Golang, Haskell, Java,
-                        JavaScript, Lua, Pascal, Python and Ruby; among these, C, Clojure and
-                        Golang stuck with me;
+                        programming languages: I've already invest differente amount of time in
+                        C, C++, Clojure, Golang, Haskell, Java, JavaScript, Lua, Pascal, Python and Ruby.
+                        Among these, <b>C</b>, <b>Clojure</b>, <b>Golang</b> and <b>Java</b> are the ones
+                        I'm most comfortable with;
                     </li>
                     <li>
-                        problems that make my brain spin: distributed systems, scalability,
-                        systems with constraints (memory, processing or messaging);
-                    </li>
-                    <li>
-                        database/storage management systems models and implentation: Datomic,
-                        CockroachDB and Dynamo are amongst the models draw most of my attention,
-                        in fact, Dynamo: Amazon’s Highly Available Key-value Store is one of my
-                        favorite papers and I’m currently working on my bytekeg, which is based
-                        on bitcask, but it has the Datomic’s concept of persistence.
+                        computer problems that make my brain spin: <b>distributed systems</b>,
+                        <b>escalabity</b>, <b>systems with restrictions</b> (memory, processing
+                        or message exchange);
                     </li>
                 </ul>
             </article>
             <article id="projects">
                 <h1>Projects</h1>
+                <table>
+                    <tr>
+                        <th><a href="https://github.com/jlucasnsilva/jlucasnsilva.github.io" target="_blank">this page</a></th>
+                        <th>HTML5, CSS, JavaScript, jQuery</th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://github.com/jlucasnsilva/makesql" target="_blank">makesql</a></th>
+                        <th>Golang</th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://github.com/jlucasnsilva/nolib" target="_blank">nolib</a></th>
+                        <th>C</th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://github.com/jlucasnsilva/bytekeg" target="_blank">bytekeg</a></th>
+                        <th>Golang</th>
+                    </tr>
+                </table>
             </article>
-            <article id="more">
-                <h1>More</h1>
-                <p>
-                    Among the great people in computer science, Douglas Crockford, Mike Acton,
-                    Rich Hickey and Rob Pike are the ones who had most influence in the way I
-                    think [about software development]. Their talks I consider the most important
-                    are:
-                </p>
-                <ul>
-                    <li>
-                        Douglas Crockford: JavaScript: The Good Parts;
-                    </li>
-                    <li>
-                        Rob Pike: “Public Static Void”, Concurrency Is Not Parallelism e Simplicity
-                        is Complicated;
-                    </li>
-                    <li>
-                        Rich Hickey: Hammock Driven Development, The Value of Values, Deconstructing
-                        the Database, Simplicity Matters, Database as a Value;
-                    </li>
-                    <li>
-                        Mike Acton: the brutal Data-Oriented Design and C++
-                    </li>
-                </ul>
+            <article id="talks">
+                <h1>Talks</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Event</th>
+                            <th>Place</th>
+                            <th>Title</th>
+                            <th>Slides</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>2017</th>
+                            <th>Python Day</th>
+                            <th>Maceió, AL</th>
+                            <th>Golang para programadores Python</th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
-        </div>
     </main>
-
-    <hr />
 
     <footer>
         2018, jlucasnsilva

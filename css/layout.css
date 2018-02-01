@@ -1,46 +1,26 @@
-a, body, div, footer, h1, h2, h3, h4, hr, header, li, main, nav, p, span, ul {
-    border: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+html, body, header, main, footer, article, div, nav {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
-h1, h2, h3, h4 {
-    padding-top: 60px;
-    padding-bottom: 30px;
-    text-align: center;
-}
+body, header, main, footer, article, nav { display: flex; }
 
-body, header, main, footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+body, header, footer, article { flex-direction: column; }
+
+body, header, main, footer { width: 100%; }
 
 html { height: 100%; }
 
-body {
-    max-height: 100hv;
-    font-size: 1.2em;
-}
+body { max-height: 100hv; }
 
-header {
-    height: 100vh;
-}
+header { height: 100vh; }
 
 main {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 768px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     clear: left;
-}
-
-hr {
-    border-style: inset;
-    border-width: 1px;
-    display: block;
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 footer {
@@ -53,58 +33,99 @@ article {
     min-height: 100vh;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+
+h1, h2, h3, h4 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+hr {
+    display: block;
+    width: 99%;
+    border-width: 2px;
+    margin: 0px auto 0px auto;
+    padding: 0px;
 }
 
 img {
-    max-width: 100%;
+    max-width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 nav {
-    display: flex;
     flex-direction: row;
     justify-content: center;
+    border-bottom: 1px solid;
+    position: fixed;
     width: 100%;
+}
+
+nav ul {
+    padding: 15px 0px 15px 0px;
+    margin: 0px;
 }
 
 nav ul li { display: inline; }
 
 nav ul li > a {
     padding: 15px 15px 15px 15px;
-    display: inline-block;
     text-align: center;
 }
 
-nav > a {
-    padding: 10px 10px 10px 10px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-nav.navbar {
-    position: fixed;
-}
-
-p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 40px;
 }
 
-ul li {
-    margin-top: 10px;
-    margin-bottom: 10px;
+li {
+    margin: 10px 0px 10px 0px;
+    text-align: justify;
 }
 
-header > div.cover {
+p { text-align: justify; }
+
+table {
+    width: 100%;
+}
+
+thead th {
+    border-bottom: 1px solid rgb(250, 100, 100);
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    margin: 10px auto 10px auto;
+}
+
+.btn-group {
+    display: inline-block;
+    margin:80px auto 10px auto;
+    max-width: 512px;
+}
+
+.cover {
     padding-top: 36vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block {
+    max-width: 768px;
+}
+
+.hidden {
+    display: none;
 }
