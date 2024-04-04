@@ -1,176 +1,82 @@
-<!DOCTYPE html>
-<head lang="pt-br">
-    <title>jlucasnsilva</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Página pessoal">
-    <meta name="keywords" content="Portifólio">
-    <meta name="author" content="João Lucas">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bg-light">
+<!doctype html>
+<html>
+  <head lang="pt-br">
+    <title>jlucasnsilva.github.io</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <script defer src="js/html2gomponents.js"></script>
+  </head>
+  <body class="container">
     <header>
-        <nav>
-            <ul>
-                <li><a id="langSwitch" href="#">english »</a></li>
-                <li><a id="aboutLink" href="#sobre">sobre</a></li>
-                <li><a id="projectsLink" href="#projetos">projetos</a></li>
-                <li><a id="talksLink" href="#palestras">palestras</a></li>
-            </ul>
-        </nav>
-        <div id="cover" class="cover">
-            <img src="img/logo.png" alt="Logo" />
-            <div id="outerLinks" class="btn-group">
-                <a class="btn" target="_blank" href="https://www.github.com/jlucasnsilva">@github</a>
-                <a class="btn" target="_blank" href="https://www.bitbucket.com/jlucasnsilva">@bitbucket</a>
-                <a class="btn" target="_blank" href="https://www.linkedin.com/in/jlucasnsilva">@linkedin</a>
-            </div>
-        </div>
+      <nav>
+        <ul>
+          <li><strong>João Lucas</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#labs">Labs</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <hr />
-
     <main>
-        <div id="pt" class="block">
-            <article id="sobre">
-                <h1>Sobre</h1>
-                <p>
-                    Graduado em Ciência da Computação pela Universidade
-                    Federal de Alagoas. Além de baixista tenho interesse em (no campo da computação):
-                </p>
-                <ul>
-                    <li>
-                        linguagens de programação: já investi quantidades diferentes de tempoe em
-                        C, C++, Clojure, Golang, Haskell, Java, JavaScript, Lua, Pascal, Python e Ruby.
-                        Dentre elas, <b>C</b>, <b>Clojure</b>, <b>Golang</b> e <b>Java</b> as que mais
-                        me sinto confortável;
-                    </li>
-                    <li>
-                        problemas que façam meu cérebro girar: <b>sistemas distribuídos</b>,
-                        <b>escalabilidade</b>, <b>sistemas com restrições</b> (memória, processamento
-                        ou troca de mensagens);
-                    </li>
-                </ul>
-            </article>
-            <article id="projetos">
-                <h1>Projetos</h1>
-                <table>
-                    <tr>
-                        <th><a href="https://github.com/jlucasnsilva/jlucasnsilva.github.io" target="_blank">this page</a></th>
-                        <th>HTML5, CSS, JavaScript, jQuery</th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://github.com/jlucasnsilva/makesql" target="_blank">makesql</a></th>
-                        <th>Golang</th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://github.com/jlucasnsilva/nolib" target="_blank">nolib</a></th>
-                        <th>C</th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://github.com/jlucasnsilva/bytekeg" target="_blank">bytekeg</a></th>
-                        <th>Golang</th>
-                    </tr>
-                </table>
-            </article>
-            <article id="palestras">
-                <h1>Palestras</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Ano</th>
-                            <th>Evento</th>
-                            <th>Lugar</th>
-                            <th>Título</th>
-                            <th>Slides</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>2017</th>
-                            <th>Python Day</th>
-                            <th>Maceió, AL</th>
-                            <th>Golang para programadores Python</th>
-                            <th></th>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+      <article id="about">
+        <h1>About</h1>
+        <div class="grid">
+          <a
+            target="_blank"
+            href="github.com/jlucasnsilva"
+            style="max-width: fit-content; margin-inline: auto"
+          >
+            <img width="72" alt="github icon" src="img/github.png" />
+          </a>
+          <a
+            target="_blank"
+            href="linkedin.com/in/jlucasnilva"
+            style="max-width: fit-content; margin-inline: auto"
+          >
+            <img width="72" alt="linkedin icon" src="img/linkedin.svg" />
+          </a>
         </div>
+      </article>
+      <article id="labs">
+        <h1>Lab</h1>
+        <details>
+          <summary>
+            Convert HTML to
+            <a href="https://github.com/maragudk/gomponents">Gomponents</a>
+          </summary>
+          <div>
+            <div class="grid">
+              <textarea
+                id="input"
+                cols="80"
+                rows="15"
+                placeholder="<span class=''badge''>Badge</span>"
+              ></textarea>
+              <textarea id="output" cols="80" rows="15" readonly></textarea>
+            </div>
+            <button
+              class="outline"
+              onclick="html2gomponents('input', 'output')"
+            >
+              Convert
+            </button>
+          </div>
+        </details>
 
-        <div id="en" class="block hidden">
-            <article id="about">
-                <h1>About</h1>
-                <p>
-                    Bsc in Computer Science from the Universidade
-                    Federal de Alagoas. In addition to bassist I am interested in (the field of computer science):
-                </p>
-                <ul>
-                    <li>
-                        programming languages: I've already invest differente amount of time in
-                        C, C++, Clojure, Golang, Haskell, Java, JavaScript, Lua, Pascal, Python and Ruby.
-                        Among these, <b>C</b>, <b>Clojure</b>, <b>Golang</b> and <b>Java</b> are the ones
-                        I'm most comfortable with;
-                    </li>
-                    <li>
-                        computer problems that make my brain spin: <b>distributed systems</b>,
-                        <b>escalabity</b>, <b>systems with restrictions</b> (memory, processing
-                        or message exchange);
-                    </li>
-                </ul>
-            </article>
-            <article id="projects">
-                <h1>Projects</h1>
-                <table>
-                    <tr>
-                        <th><a href="https://github.com/jlucasnsilva/jlucasnsilva.github.io" target="_blank">this page</a></th>
-                        <th>HTML5, CSS, JavaScript, jQuery</th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://github.com/jlucasnsilva/makesql" target="_blank">makesql</a></th>
-                        <th>Golang</th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://github.com/jlucasnsilva/nolib" target="_blank">nolib</a></th>
-                        <th>C</th>
-                    </tr>
-                    <tr>
-                        <th><a href="https://github.com/jlucasnsilva/bytekeg" target="_blank">bytekeg</a></th>
-                        <th>Golang</th>
-                    </tr>
-                </table>
-            </article>
-            <article id="talks">
-                <h1>Talks</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Year</th>
-                            <th>Event</th>
-                            <th>Place</th>
-                            <th>Title</th>
-                            <th>Slides</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>2017</th>
-                            <th>Python Day</th>
-                            <th>Maceió, AL</th>
-                            <th>Golang para programadores Python</th>
-                            <th></th>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+        <hr />
+
+        <details>
+          <summary>TODO</summary>
+          <p>TODO...</p>
+        </details>
+      </article>
     </main>
-
-    <footer>
-        2018, jlucasnsilva
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="js/layout.js"></script>
-</body>
+    <footer>2024, jlucasnsilva</footer>
+  </body>
+</html>
