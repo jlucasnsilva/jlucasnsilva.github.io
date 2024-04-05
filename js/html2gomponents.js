@@ -1,12 +1,4 @@
 function html2gomponents(inID, outID) {
-    const packages = {
-        alpine: '"github.com/jlucasnsilva/gomponents-alpine"',
-        htmx: 'hx "github.com/maragudk/gomponents-htmx"',
-        gomponents: 'g "github.com/maragudk/gomponents"',
-        html: 'h "github.com/maragudk/gomponents/html"',
-        svg: '"github.com/maragudk/gomponents/svg"',
-    };
-
     const translation = {
         svg: {
             "clip-rule": "ClipRule",
@@ -334,8 +326,6 @@ function html2gomponents(inID, outID) {
 
     function tr(root, pad = "", builder = newStringBuilder()) {
         const childPad = `${pad}${PAD}`;
-        const attrPad = `${pad}${PAD}${PAD}`;
-
         for (let child of root.childNodes) {
             if (ignoredNodes.includes(child.nodeType)) {
                 continue;
@@ -358,13 +348,16 @@ function html2gomponents(inID, outID) {
             builder.add(pad, getTranslation(child.nodeName.toLowerCase()), "(", EOL);
 
             if (attributes && attributes.length > 0) {
-                builder.add(pad, PAD, "g.Group(", EOL);
                 const count = attributes.length;
                 for (let i = 0; i < count; i++) {
                     const item = attributes.item(i);
-                    builder.add(attrPad, getTranslation(item.name, item.value), ",", EOL);
+                    builder.add(
+                        childPad,
+                        getTranslation(item.name, item.value),
+                        ",",
+                        EOL,
+                    );
                 }
-                builder.add(pad, PAD, "),", EOL); // /Group
             }
 
             tr(child, childPad, builder);
